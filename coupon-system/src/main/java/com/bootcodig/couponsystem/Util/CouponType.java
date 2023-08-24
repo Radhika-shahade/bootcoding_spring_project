@@ -7,9 +7,9 @@ public class CouponType {
     public static  String type()
     {
         Random random= new Random();
-        String s[]= {"BuyOneGetOne","FreeShipping","FirstPurchase","SeasonalPromo","EndOfSeason","PercentOff"};
-        int index= random.nextInt(s.length);
-        return s[index];
+        String couponType[]= {"BuyOneGetOne","FreeShipping","FirstPurchase","SeasonalPromo","EndOfSeason","PercentOff"};
+        int index= random.nextInt(couponType.length);
+        return couponType[index];
     }
 
 }
