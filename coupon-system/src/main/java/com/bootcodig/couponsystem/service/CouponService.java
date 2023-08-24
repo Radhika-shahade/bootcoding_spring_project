@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class CouponService {
@@ -26,7 +25,7 @@ public class CouponService {
                     .category(CouponCategory.category())
                     .createDate(DateGenerator.createDate())
                     .createBy(CreatedBy.createdBy())
-                    .isActive(ValidityStatus.isActive())
+                    .isActive(StatusGenerator.isActive())
                     .status(CouponStatus.generateStatus()).build();
             list.add(coupon);
         }
