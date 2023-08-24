@@ -1,6 +1,6 @@
 package com.bootcodig.couponsystem.service;
 
-import com.bootcodig.couponsystem.Util.*;
+import com.bootcodig.couponsystem.util.*;
 import com.bootcodig.couponsystem.model.Coupon;
 import com.bootcodig.couponsystem.repository.CouponRepository;
 import org.springframework.beans.factory.annotation.Autowired;

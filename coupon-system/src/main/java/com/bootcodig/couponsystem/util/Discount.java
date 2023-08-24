@@ -1,4 +1,4 @@
-package com.bootcodig.couponsystem.Util;
+package com.bootcodig.couponsystem.util;
 
 import java.util.Random;
 
