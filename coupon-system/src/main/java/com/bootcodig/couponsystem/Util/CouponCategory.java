@@ -6,9 +6,9 @@ public class CouponCategory {
     public static String category()
     {
         Random random= new Random();
-        String s[]={"Fashion","Electronics","Travel & Leisure","Tech & Gadgets","Books & Stationery","Jewelry & Accessories","Entertainment"};
-        int index= random.nextInt(s.length);
-        return s[index];
+        String categories[]={"Fashion","Electronics","Travel & Leisure","Tech & Gadgets","Books & Stationery","Jewelry & Accessories","Entertainment"};
+        int index= random.nextInt( categories.length);
+        return  categories[index];
     }
 
 }
