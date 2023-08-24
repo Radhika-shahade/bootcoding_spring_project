@@ -5,9 +5,9 @@ import java.util.Random;
 public class CouponStatus {
 
     public static String generateStatus() {
-        String[] st = {"Active", "Expired", "Upcoming", "Redeemed"};
+        String[] status = {"Active", "Expired", "Upcoming", "Redeemed"};
         Random random = new Random();
-        int index = random.nextInt(st.length);
-        return st[index];
+        int index = random.nextInt(status.length);
+        return status[index];
     }
 }
