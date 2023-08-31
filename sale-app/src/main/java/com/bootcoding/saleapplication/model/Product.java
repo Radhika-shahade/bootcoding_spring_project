@@ -18,5 +18,6 @@ public class Product {
     private String productName;
     private double prize;
     @ManyToOne
+    @JoinColumn(name = "productId", referencedColumnName = "id")
     private Customer customer;
 }
