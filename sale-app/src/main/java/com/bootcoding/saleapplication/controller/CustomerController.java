@@ -16,19 +16,20 @@ import java.util.List;
 public class CustomerController {
     @Autowired
     private CustomerService customerService;
-@PostMapping("/placeOrder/{value}")
-    public ResponseEntity<List<Customer>> placeOrder(@PathVariable int value)
-    {
-        List<Customer> customers= customerService.placeOrder(value);
-        HttpHeaders httpHeaders= new HttpHeaders();
-        httpHeaders.add("description","inserting details");
+
+    @PostMapping("/placeOrder/{value}")
+    public ResponseEntity<List<Customer>> placeOrder(@PathVariable int value) {
+        List<Customer> customers = customerService.placeOrder(value);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("description", "inserting details");
         return ResponseEntity.status(HttpStatus.OK).headers(httpHeaders).body(customers);
     }
+
     @GetMapping("/orders")
-    public ResponseEntity<List<Customer>> findAllOrder(){
+    public ResponseEntity<List<Customer>> findAllOrder() {
         List<Customer> customers = customerService.findAll();
-        HttpHeaders header= new HttpHeaders();
-        header.add("description","Getting all customers details");
+        HttpHeaders header = new HttpHeaders();
+        header.add("description", "Getting all customers details");
         return ResponseEntity.status(HttpStatus.OK).headers(header).body(customers);
     }
 
